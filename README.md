@@ -46,17 +46,6 @@ Tab:AddButton({
 			 end
 })
 local Tab = Window:MakeTab({
-	Name = "Fisch",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
-})
-Tab:AddButton({
-	Name = "Coming soon...",
-	Callback = function()
-	            
-   end
-})
-local Tab = Window:MakeTab({
 	Name = "Blade Ball",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = true
