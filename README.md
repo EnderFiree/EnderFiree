@@ -51,9 +51,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = true
 })
 Tab:AddButton({
-	Name = "Hub Fisch {OP}",
+	Name = "Coming soon...",
 	Callback = function()
-	            loadstring(game:HttpGet(“https://raw.githubusercontent.com/londnee/code/refs/heads/main/Fisch.lua”))()
+	            
    end
 })
 local Tab = Window:MakeTab({
