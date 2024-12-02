@@ -88,6 +88,17 @@ Tab:AddButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
   	end    
 })
+local Tab = Window:MakeTab({
+	Name = "Funky Friday",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Funky Friday Hub{OP}",
+	Callback = function()
+      loadstring(game:HttpGet('https://pastebin.com/raw/dcyuEgyK'))()
+			end
+})
           
           
           
