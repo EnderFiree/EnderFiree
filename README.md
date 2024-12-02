@@ -55,7 +55,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Hub BB {OP}",
 	Callback = function()
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/SumitScripts/Blade-ball-V6/main/SumitScriptsHub%2BV6%2BProjecter"))()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/redopy7/Blade-Ball/refs/heads/main/Kalitor"))()
        end
 })
 
