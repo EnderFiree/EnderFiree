@@ -39,17 +39,6 @@ Tab:AddButton({
 	               loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 			end
 })
-local Tab = Window:MakeTab({
-	Name = "Blade Ball",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
-	})
-Tab:AddButton({
-	Name = "Hub BB {OP}",
-	Callback = function()
-	           loadstring(game:HttpGet("https://raw.githubusercontent.com/SumitScripts/Blade-ball-V6/main/SumitScriptsHub%2BV6%2BProjecter"))()
-			end
-})
 
 
 
