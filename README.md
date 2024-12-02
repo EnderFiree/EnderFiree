@@ -99,11 +99,30 @@ Tab:AddButton({
       loadstring(game:HttpGet('https://pastebin.com/raw/dcyuEgyK'))()
 			end
 })
-          
-          
-          
-          
-          
+
+
+local Tab = Window:MakeTab({
+	Name = "Rivals",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = " Neutron Hub{OP}",
+	Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/refs/heads/main/V1.0.2.txt", true))();
+			 end
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 
