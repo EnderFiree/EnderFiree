@@ -17,7 +17,7 @@ local Tab = Window:MakeTab({
 Tab:AddTextbox({
 	Name = "Enter Key",
 	Default = "N",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 	          _G.KeyInput = Value
 	end	  
@@ -25,7 +25,6 @@ Tab:AddTextbox({
 
 Tab:AddButton({
 	Name = "Check Key"
-	       _G.Key _G.KeyInput
 	Callback = function()
 	        local Window = OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 local Tab = Window:MakeTab({
