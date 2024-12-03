@@ -4,12 +4,6 @@ local Player = game.Players.LocalPlayer
 local Window =
 OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
-OrionLib:MakeNotification({
-	Name = "Logged in!",
-	Content = "You are logged in as "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 _G.Key = "Hdidbsnonimapnoe982"
 _G.KeyInput = "string"
@@ -35,23 +29,6 @@ OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = 
 
 
 	
-function CorrectKeyNotification()
-    OrionLib:MakeNotification({
-		    Name = "Correct Key!",
-				Content = "You have entered the correct key!",
-			  Image = "rbxassetid://4483345998",
-				Time = 5
-    })
-end
-
-function IncorrectKeyNotification()
-    OrionLib:MakeNotification({
-		    Name = "Incorrect Key!",
-				Content = "You have entered the incorrect key!",
-			  Image = "rbxassetid://4483345998",
-				Time = 5
-    })
-end
 
 
 
@@ -75,9 +52,6 @@ Tab:AddButton({
 	Callback = function()
       		if _G.KeyInput == _G.Key then 
 					MakeScriptHub()
-					CorrectKeyNotification()
-					else
-					    IncorrectKeyNotification()
 					end
   	end    
 })
