@@ -1,5 +1,36 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
+local Window =
+OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+
+
+_G.Key = "Hdidbsnonimapnoe982"
+_G.KeyInput = "string"
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "N",
+	TextDisappear = false,
+	Callback = function(Value)
+	          _G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key"
+	      MakeScriptHub()
+				   _G.Key = 
+"Hdidbsnonimapnoe982"
+           _G.KeyInput = "string"
+					
+	        local Window = OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 local Tab = Window:MakeTab({
 	Name = "Blox Fruits",
 	Icon = "rbxassetid://4483345998",
@@ -109,17 +140,9 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = " Neutron Hub{OP}",
 	Callback = function()
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/refs/heads/main/V1.0.2.txt", true))();
-			 end
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/refs/heads/main/V1.0.2.txt", true))();  		
+  	end    
 })
-
-
-
-
-
-
-
-
 
 
 
