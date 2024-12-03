@@ -6,28 +6,6 @@ OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true
 _G.Key = "Hdidbsnonimapnoe982"
 _G.KeyInput = "string"
 
-function MakeScriptHub()
-     local Window =
-OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, IntroEnabled = false})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
 
 
 local Tab = Window:MakeTab({
@@ -47,8 +25,10 @@ Tab:AddTextbox({
 
 Tab:AddButton({
 	Name = "Check Key",
-	Callback = function()
+	        _G.Key _G.KeyInput 
+					
 	        MakeScriptHub()
+					
 					local Window = OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 local Tab = Window:MakeTab({
 	Name = "Blox Fruits",
