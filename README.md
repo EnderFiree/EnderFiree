@@ -38,7 +38,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddTextbox({
 	Name = "Enter Key",
-	Default = "",
+	Default = "N",
 	TextDisappear = true,
 	Callback = function(Value)
 		_G.KeyInput = Value
@@ -48,13 +48,9 @@ Tab:AddTextbox({
 Tab:AddButton({
 	Name = "Check Key",
 	Callback = function()
-      		if _G.KeyInput == _G.Key then 
-					MakeScriptHub()
-					end
-  	end    
+      		if _G.KeyInput == _G.Key then
+				end
 })
-
-
 
 
 
