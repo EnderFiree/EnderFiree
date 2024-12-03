@@ -3,9 +3,6 @@ local Window =
 OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 
-_G.Key = "Hdidbsnonimapnoe982"
-_G.KeyInput = "string"
-
 
 
 local Tab = Window:MakeTab({
@@ -19,14 +16,13 @@ Tab:AddTextbox({
 	Default = "N",
 	TextDisappear = false,
 	Callback = function(Value)
-	        _G.Key  _G.KeyInput
 	   end	  
 })
 
 Tab:AddButton({
 	Name = "Check Key"
   Callback = function()
-      		_G.Key _G.KeyInput
+      		
 
 
 
