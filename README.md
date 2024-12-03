@@ -21,13 +21,11 @@ Tab:AddTextbox({
 	end	  
 })
 
-_G.Key
-_G.KeyInput
 
 
 Tab:AddButton({
 	Name = "Check Key",
-	Callback = function(Value)
+	Callback = function()
 	        MakeScriptHub()
 local Window = OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 
