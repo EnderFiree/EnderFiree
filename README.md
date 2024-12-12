@@ -113,6 +113,30 @@ Tab:AddButton({
 			 end
 })
 
+local Tab = Window:MakeTab({
+	Name = "Aut",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = " Demonic Hub{NEW}",
+	Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/OhhMyGehlee/Mul/refs/heads/main/ver"))()
+			 end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Sols rng",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = " Erudite Hub{NEW}",
+	Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/ThacG/EruditeHub/main/Sol's%20RNG/V2.69"))()
+			 end
+})
+
 
 
 
