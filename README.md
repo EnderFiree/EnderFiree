@@ -1,4 +1,56 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Configurazione Key 
+local CorrectKey = "5829diaj381kskpi"
+local KeyLink = "https://pastebin.com/xpNHZRzq" -- Sostituisci con un link reale
+
+-- Funzione per verificare la key
+local function CheckKey(inputKey)
+    return inputKey == CorrectKey
+end
+
+-- Finestra di Verifica Key
+local KeyWindow = OrionLib:MakeWindow({
+    Name = "🔒 Key System", 
+    HidePremium = false, 
+    SaveConfig = true, 
+    ConfigFolder = "KeyVerification"
+})
+
+local KeyTab = KeyWindow:MakeTab({
+    Name = "Key Verification",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Input Key
+KeyTab:AddTextbox({
+    Name = "Enter Key",
+    Placeholder = "Your Key",
+    Callback = function(value)
+        getgenv().UserKey = value
+    end    
+})
+
+-- Bottone Verifica Key
+KeyTab:AddButton({
+    Name = "Verify Key",
+    Callback = function()
+        local userKey = getgenv().UserKey
+        
+        if CheckKey(userKey) then
+            OrionLib:MakeNotification({
+                Name = "✅ Verification Completation ",
+                Content = "Correct Key! Loading script...",
+                Image = "rbxassetid://4483345998",
+                Time = 3
+            })
+            
+            
+            wait(2)
+            OrionLib:Destroy()
+              
+            local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "OrionLib | Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 local Tab = Window:MakeTab({
 	Name = "Blox Fruits",
@@ -150,5 +202,32 @@ Tab:AddButton({
 
 
 
+
+OrionLib:Init()
+            
+            OrionLib:Init()
+        else
+            OrionLib:MakeNotification({
+                Name = "❌ Incorrect",
+                Content = "Key Incorrect! Try.",
+                Image = "rbxassetid://4483345998",
+                Time = 3
+            })
+        end
+    end
+})
+
+KeyTab:AddButton({
+    Name = "Get Key",
+    Callback = function()
+        setclipboard(KeyLink)
+        OrionLib:MakeNotification({
+            Name = "🔗 The Link is Copied",
+            Content = "Link for the key is copied!",
+            Image = "rbxassetid://4483345998",
+            Time = 3
+        })
+    end
+})
 
 OrionLib:Init()
