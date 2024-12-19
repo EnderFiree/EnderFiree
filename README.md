@@ -189,6 +189,17 @@ Tab:AddButton({
 			 end
 })
 
+local Tab = Window:MakeTab({
+	Name = "Veichle Legends",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = " Vesta Hub{NEW}",
+	Callback = function()
+    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/Vehicle%20legends"))()
+
 
 
 
